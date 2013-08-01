@@ -1,0 +1,6 @@
+<form action="/" method="post" style='text-align:center;position:relative;top:40%;'>
+   {% csrf_token %}
+   {{ form.as_p }}
+   <input type="text" id="url" maxlength="400" class="required" value="" name="url">
+   <input type="submit" value="Trim it!" />
+</form>
